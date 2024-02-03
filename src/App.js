@@ -11,6 +11,7 @@ import Plans from "./Pages/plans/Plans.jsx"
 import Trainers from "./Pages/trainers/Trainers.jsx"
 import BackToTop from "./Components/BacktoTop";
 
+
 function App () {
   return (
 
@@ -27,8 +28,8 @@ function App () {
 
       </Routes>
       <BackToTop />
-    </BrowserRouter>
 
+    </BrowserRouter>
 
 
   );

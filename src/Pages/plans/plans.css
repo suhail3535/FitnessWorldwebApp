@@ -1,14 +1,18 @@
 .paln_container {
     width: 90%;
     margin: 8rem auto;
+    /* border: 1px solid red; */
 }
 .plan_card_div {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-
+.plan_card_div div:hover{
+    transform: scale(1.1);
+}
 .plan_card_div div {
+    transition: transform 0.5s ease-in-out;
     padding: 50px 10px;
     background: var(--color-gray-500);
     cursor: pointer;

@@ -12,7 +12,7 @@ const About = () => {
 
         In 1977, Vawulens's Gym Received International Attention When It Was Featured In The Movie Pumping Iron That Starred Arnold Schwarzenegger And Lou Ferrigno. From That First Gym In Venice, Vawulens's Gym Has Become The Largest Co-Ed Gym Chain In The World With Over 700+ Clubs In 27 Countries. Today, Vawulens's Gym Has Expanded Its Fitness Profile To Offer All Of The Latest Equipment And Services, Including Group Exercise, Personal Training, Cardiovascular Equipment, Spinning, And Yoga, While Maintaining Its Core Weight Lifting Tradition.
 
-        Vawulens's Gym Has Become The Preferred Gym Of Celebrities, Athletes, Bodybuilders, The Military, And Fitness Enthusiasts All Over The World. Most Importantly, Vawulens's Gym Continues To Change Lives By Helping People Achieve Their Individual Potential.
+        
 
         </div>
       </div>

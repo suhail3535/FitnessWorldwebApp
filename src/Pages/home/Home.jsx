@@ -10,20 +10,17 @@ import Contact from '../contact/Contact.jsx'
 
 
 const Home = () => {
-
-
-
-  return (
-    <div>
-      <MainHeader />
-      <Program />
-      <About />
-      <Gallery />
-      <Plans />
-      <Trainers />
-      <Contact />
-    </div>
-  )
-}
+    return (
+        <div>
+            <MainHeader />
+            <Program />
+            <About />
+            <Gallery />
+            <Plans />
+            <Trainers />
+            <Contact />
+        </div>
+    );
+};
 
 export default Home

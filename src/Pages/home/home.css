@@ -64,15 +64,18 @@
 .praogram_wrapper {
     display: grid;
     /* border: 1px solid red; */
+        transition: transform 0.7s ease-in-out;
     margin-bottom: 100px;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
     margin-top: 4rem;
     /* cursor: pointer; */
 }
-.program_program {
+.program_program:hover {
     /* border: 2px solid yellow; */
     cursor: pointer;
+        transform: scale(1.1);
+
 }
 .program_program a {
     margin-top: 2.5rem;

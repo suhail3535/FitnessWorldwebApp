@@ -3,7 +3,9 @@
     justify-content: space-between;
     width: 90%;
     height: auto;
+    /* border: 2px solid yellow; */
     margin: 10rem auto;
+
 }
 .contact-form {
     width: 50%;

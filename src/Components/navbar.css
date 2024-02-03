@@ -8,6 +8,7 @@ place-items: center;
 position: fixed;
 top: 0;
 left: 0; z-index: 99;
+scroll-behavior: smooth;
 
 }
 .nav_toggle_btn{
