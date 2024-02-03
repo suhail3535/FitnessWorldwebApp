@@ -1,0 +1,254 @@
+/* -----------MainHeader---------- */
+.main_header {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 130px;
+    /* border: 2px solid yellow; */
+    display: grid;
+    place-items: center;
+
+}
+.main_header-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+}
+.main_Header-left {
+    margin-top: -3rem;
+}
+.main_Header-left h4 {
+    margin-bottom: 1rem;
+    color: var(--color-secondary);
+    font-weight: 400;
+}
+
+.main_Header-left p {
+    margin: 1rem 0 3.5rem;
+    font-size: 1.1rem;
+}
+
+.main_header-right {
+    margin-top: 100px;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.main_header-circle {
+    width: 25rem;
+    height: 25rem;
+    background: linear-gradient(75deg, var(--color-secondary), transparent);
+    border-radius: 50%;
+
+    position: absolute;
+    /* filter: blur(2px); */
+
+    transition: var(--trasition);
+}
+.main-header-right:hover .main_header-circle {
+    filter: blur(3px);
+    /* border: 1px solid teal; */
+}
+.main_header-image {
+    position: relative;
+    width: 90%;
+}
+
+/* *************programs********** */
+.program {
+    margin-top: 4rem;
+    /* border: 2px solid green; */
+}
+.praogram_wrapper {
+    display: grid;
+    /* border: 1px solid red; */
+    margin-bottom: 100px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin-top: 4rem;
+    /* cursor: pointer; */
+}
+.program_program {
+    /* border: 2px solid yellow; */
+    cursor: pointer;
+}
+.program_program a {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.program_program a:hover {
+    background: var(--color-secondary);
+    color: var(--color-gray-600);
+}
+
+/* ----------Media Query----------- */
+/* -------------For Mobile Screen--------- */
+@media screen and (min-width: 280px) and (max-width: 420px) {
+    .main_header-container {
+        height: 100%;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        align-items: center;
+        /* border: 2px solid rgb(0, 255, 234); */
+        margin-bottom: 20rem;
+        justify-content: space-between;
+        gap: 6rem;
+    }
+    .main_Header-left {
+        /* border: 1px solid teal; */
+        margin-top: 2rem;
+        text-align: center;
+        padding: 0.5rem 0 0.5rem 0;
+        margin-bottom: 3rem;
+    }
+    .main_Header-left h4 {
+        margin-bottom: 1rem;
+        color: var(--color-secondary);
+        font-weight: 400;
+        margin-top: 8rem;
+    }
+
+    .main_Header-left p {
+        margin: 1rem 0 3.5rem;
+        font-size: 1.1rem;
+    }
+
+    .main_header-right {
+        margin-top: 100px;
+
+        display: grid;
+        place-items: center;
+        position: relative;
+    }
+    .main_header-circle {
+        /* border: 1px solid rgb(38, 0, 255); */
+        width: 22rem;
+        padding: 20px;
+        /* margin-right: 5rem; */
+
+        background: linear-gradient(75deg, var(--color-secondary), transparent);
+        border-radius: 50% 50%;
+
+        position: absolute;
+        /* filter: blur(2px); */
+
+        transition: var(--trasition);
+    }
+    .main-header-right:hover .main_header-circle {
+        filter: blur(3px);
+        /* border: 1px solid teal; */
+    }
+    .main_header-image {
+        position: relative;
+        width: 70%;
+    }
+    .program {
+        margin-top: 600px;
+        width: 100%;
+
+        /* border: 10px solid rgb(128, 0, 90); */
+    }
+    .praogram_wrapper {
+        display: grid;
+        /* border: 1px solid red; */
+        width: 100%;
+           grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+
+        /* cursor: pointer; */
+    }
+    .card span {
+        margin-left: 80px;
+    }
+}
+/* -------------For Tablet Screen--------- */
+@media screen and (min-width: 421px) and (max-width: 1024px) {
+    .main_header-container {
+        height: 100%;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        align-items: center;
+        /* border: 2px solid rgb(0, 255, 234); */
+        margin-bottom: 20rem;
+        justify-content: space-between;
+        gap: 6rem;
+    }
+    .main_Header-left {
+        /* border: 1px solid teal; */
+        margin-top: 2rem;
+        text-align: center;
+        padding: 0.5rem 0 0.5rem 0;
+        margin-bottom: 3rem;
+    }
+    .main_Header-left h4 {
+        margin-bottom: 1rem;
+        color: var(--color-secondary);
+        font-weight: 400;
+        margin-top: 8rem;
+    }
+
+    .main_Header-left p {
+        margin: 1rem 0 3.5rem;
+        font-size: 1.1rem;
+    }
+
+    .main-header-right {
+        margin-top: 100px;
+        /* border: 1px solid rgb(38, 0, 255); */
+
+        display: grid;
+        place-items: center;
+        position: relative;
+    }
+    .main_header-circle {
+        width: 25rem;
+        /* padding: 20px; */
+        /* border: 1px solid rgb(38, 0, 255); */
+
+        margin-left: 5rem;
+
+        background: linear-gradient(75deg, var(--color-secondary), transparent);
+        border-radius: 50%;
+
+        position: absolute;
+        /* filter: blur(2px); */
+
+        transition: var(--trasition);
+    }
+    .main-header-right:hover .main_header-circle {
+        filter: blur(3px);
+        /* border: 1px solid teal; */
+    }
+    .main_header-image {
+        position: relative;
+        width: 50%;
+    }
+    .program {
+        margin-top: 150px;
+        width: 100%;
+        padding: 5px;
+    }
+    .praogram_wrapper {
+        display: grid;
+        /* border: 1px solid red; */
+        width: 100%;
+
+        margin-bottom: 100px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        margin-top: 4rem;
+        /* cursor: pointer; */
+    }
+    .card span {
+        margin-left: 80px;
+    }
+}
+
+
