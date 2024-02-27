@@ -1,35 +1,65 @@
 .footer_div {
-  border: 5px solid green;
+  border: 1px dotted rgb(223, 223, 220);
   width: 100%;
   text-align: center;
+  padding: 20px;
 
 }
 
 .card_div {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: grid;
   width: 95%;
   margin: auto;
+  cursor: pointer;
   grid-template-columns: repeat(4, 1fr);
 }
 
+.icon{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.icon svg{
+    font-size: 30px;
+
+}
+.input{
+    /* border: 1px solid rgb(207, 207, 204); */
+    width: 100%;
+    margin: 10px auto;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.input input{
+    margin-right: 50px;
+    height: 30px;
+    border-radius: 5px;
+}
 @media (min-width: 200px) and (max-width: 420px) {
 .card_div {
-  border: 2px solid rgb(0, 195, 255);
+  /* border: 2px solid rgb(0, 195, 255); */
   display: block;
   /* grid-template-columns: repeat(1,1fr); */
 
 }
 .first_card{
-    border: 2px solid yellow;
+    border: 1px solid rgb(218, 218, 216);
     width: 100%;
     margin: 10px auto;
 }
 .last_card{
-    border: 1px dotted rgb(207, 207, 204);
+    border: 1px solid rgb(207, 207, 204);
     width: 100%;
     margin: 10px auto;
+    padding-bottom: 10px;
 
+}
+ .ptag{
+    /* color :red; */
+    font-size: 15px;
 }
 .last_card div{
     display: flex;

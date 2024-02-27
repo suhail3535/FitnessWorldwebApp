@@ -70,44 +70,21 @@ export default function Footer() {
   return (
     <div>
       <div className="footer_div">
-        <div
-          className="card_div"
-         >
+        <div className="card_div">
           <div className="first_card">
             <div
               width={"160px"}
               display={"flex"}
               justifyContent={"space-between"}>
-              <h1
-                style={{
-                  textAlign: "center",
-                  marginTop: "5px",
-                  marginRight: "30px",
-                  color: "rgb(103,103,200)",
-                  fontWeight: "500",
-                }}>
-                VawuLens
-              </h1>
+              <h1>VawuLens</h1>
             </div>
-            <Text fontSize={"sm"}>
-              © 2023 Ride Advertise. All rights reserved
-            </Text>
-            <div direction={"row"} spacing={10} border={"2px solid green"}>
-              <SocialButton label={"Twitter"} href={""}>
-                <FaTwitter
-                  style={{ color: "rgb(0, 172, 228)", fontSize: "100px" }}
-                />
-              </SocialButton>
-              <SocialButton label={"YouTube"} href={""}>
-                <FaYoutube
-                  style={{ color: "rgb(205, 32, 31)", fontSize: "30px" }}
-                />
-              </SocialButton>
-              <SocialButton label={"Instagram"} href={""}>
-                <FaInstagram
-                  style={{ color: "rgb(214,41,118)", fontSize: "30px" }}
-                />
-              </SocialButton>
+            <p className="ptag">© 2023 Ride Advertise. All rights reserved</p>
+            <div className="icon">
+              <FaTwitter style={{ color: "rgb(0, 172, 228)" }} />
+
+              <FaYoutube style={{ color: "rgb(205, 32, 31)" }} />
+
+              <FaInstagram style={{ color: "rgb(214,41,118)" }} />
             </div>
           </div>
           <div className="first_card">
@@ -148,31 +125,19 @@ export default function Footer() {
           </div>
           <div className="last_card">
             <ListHeader>Stay up to date</ListHeader>
-            <div  >
-              <Input
+            <div className="input">
+              <input
                 placeholder={"Your email address"}
-                bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
-                border={0}
-                _focus={{
-                  bg: "whiteAlpha.300",
-                }}
+
+
               />
-              <IconButton
-                color={useColorModeValue("white", "gray.800")}
-                _hover={{
-                  bg: "transparent",
-                  cursor: "pointer",
-                }}
-                width={"40px"}
-                aria-label="Subscribe"
-                icon={
-                  <img
-                    style={{ width: "100%" }}
-                    src="https://sf.ezoiccdn.com/ezoimgfmt/www.schemecolor.com/wp-content/uploads/google-gmail-logo.png?ezimgfmt=rs:60x60/rscb1/ng:webp/ngcb1"
-                    alt="gmail"
-                  />
-                }
-              />
+              <div>
+                <img
+                  style={{ width: "40%" }}
+                  src="https://sf.ezoiccdn.com/ezoimgfmt/www.schemecolor.com/wp-content/uploads/google-gmail-logo.png?ezimgfmt=rs:60x60/rscb1/ng:webp/ngcb1"
+                  alt="gmail"
+                />
+              </div>
             </div>
           </div>
         </div>
