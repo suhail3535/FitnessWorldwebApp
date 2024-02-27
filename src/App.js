@@ -12,6 +12,7 @@ import Trainers from "./Pages/trainers/Trainers.jsx"
 import {ChakraProvider} from '@chakra-ui/react'
 import BackToTop from "./Components/BacktoTop";
 import Footer from "./Components/Footer.jsx";
+import Admin from "./Pages/admin/Admin.jsx";
 
 
 function App () {
@@ -24,6 +25,7 @@ function App () {
         <Route path="contact" element={<Contact />} />
         <Route path="gallery" element={<Gallery />} />
         <Route path="plans" element={<Plans />} />
+        <Route path="admin" element={<Admin />} />
         <Route path="trainers" element={<Trainers />} />
         <Route path="*" element={<Notefound />} />
 
@@ -31,7 +33,7 @@ function App () {
       <BackToTop />
 
     </BrowserRouter>
-      <Footer /> 
+      <Footer />
 
     </>
   );

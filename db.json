@@ -1,10 +1,32 @@
 {
   "contacts": [
     {
-      "name": "Uzair Ansari",
-      "email": "uzair@gmail.com",
-      "query": "hello suhail how are you there!",
+      "name": "suhail khan",
+      "email": "Khansohail015@gmail.com",
+      "mobile": "08630245788",
+      "query": "hello i want to about silver pack",
       "id": 1
+    },
+    {
+      "name": "sahil khan",
+      "email": "Khansohail015@gmail.com",
+      "mobile": "08630245788",
+      "query": "hello i want to about silver pack",
+      "id": 2
+    },
+    {
+      "name": "amar",
+      "email": "Khansohail015@gmail.com",
+      "mobile": "08630245788",
+      "query": "hello i want to about silver pack",
+      "id": 3
+    },
+    {
+      "name": "mohit gautam",
+      "email": "khansohail015@gmail.com",
+      "mobile": "+919598125005",
+      "query": "hello from mohit",
+      "id": 4
     }
   ]
 }
