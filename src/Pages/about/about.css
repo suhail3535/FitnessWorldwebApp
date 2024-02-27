@@ -1,17 +1,19 @@
 .about_container {
     width: 90%;
     margin: 10rem auto;
-    /* border: 1px solid red; */
+    
     padding: 1rem;
 }
 
 #parent_div {
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid green; */
+
+    gap: 60px;
 }
 .image_div {
     width: 40%;
+
 
 }
 .image_div img {
