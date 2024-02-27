@@ -1,41 +1,89 @@
 .trainer_div {
-    width: 100%;
-    margin: 8rem auto;
-    /* border: 2px solid yellow; */
-    height: auto;
+  width: 100%;
+  margin: 8rem auto;
+  /* border: 2px solid yellow; */
+  height: auto;
 }
 #trainer_details_div {
+  width: 90%;
+  margin: 2rem auto;
+  /* border: 2px solid rgb(119, 0, 255); */
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.trainer_card {
+  border: 2px solid transparent;
+  border-radius: 1% 20%;
+  background: var(--color-gray-500);
+  margin-top: 2rem;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+.trainer_card:hover {
+  border: 1px solid gray;
+  transition: var(--transition);
+  border-radius: 1% 20%;
+  text-align: center;
+  cursor: pointer;
+  padding: 1rem;
+}
+.trainer_image{
+    /* border: 1px solid green; */
+    padding: 10px;
+    overflow: hidden;
+    transition: all 0.8s ease-in-out;
+}
+.trainer_image img {
+  /* border: 2px solid yellow; */
+  width: 80%;
+  display: flex;
+    transition: all 0.6s ease-in-out;
+
+  border-radius: 10px;
+
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.trainer_image img:hover{
+    cursor: pointer;
+  transform: scale(1.1);
+
+
+}
+/* ------------Media Query----------- */
+/* ------------For Mobile Screen--------- */
+@media screen and (min-width: 280px) and (max-width: 768px) {
+  #trainer_details_div {
     width: 90%;
     margin: 2rem auto;
     /* border: 2px solid rgb(119, 0, 255); */
     height: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
-
-
-}
-
-#trainer_details_div div {
+  }
+  .trainer_card {
     border: 2px solid transparent;
     border-radius: 1% 20%;
     background: var(--color-gray-500);
-margin-top: 2rem;
+
     text-align: center;
     padding: 1rem;
-        transition: transform 0.5s ease-in-out;
-}
-#trainer_details_div div:hover {
+  }
+ .trainer_card:hover {
     border: 1px solid gray;
     transition: var(--transition);
     border-radius: 1% 20%;
     text-align: center;
     cursor: pointer;
     padding: 1rem;
-        transform: scale(1.1);
-
-}
-#trainer_details_div div img {
+  }
+  .trainer_image img {
     /* border: 2px solid yellow; */
     width: 80%;
     display: flex;
@@ -44,44 +92,5 @@ margin-top: 2rem;
     justify-content: center;
     align-items: center;
     margin: auto;
-}
-
-/* ------------Media Query----------- */
-/* ------------For Mobile Screen--------- */
-@media screen and (min-width: 280px) and (max-width: 768px) {
-    #trainer_details_div {
-        width: 90%;
-        margin: 2rem auto;
-        /* border: 2px solid rgb(119, 0, 255); */
-        height: auto;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 2rem;
-    }
-    #trainer_details_div div {
-        border: 2px solid transparent;
-        border-radius: 1% 20%;
-        background: var(--color-gray-500);
-
-        text-align: center;
-        padding: 1rem;
-    }
-    #trainer_details_div div:hover {
-        border: 1px solid gray;
-        transition: var(--transition);
-        border-radius: 1% 20%;
-        text-align: center;
-        cursor: pointer;
-        padding: 1rem;
-    }
-    #trainer_details_div div img {
-        /* border: 2px solid yellow; */
-        width: 80%;
-        display: flex;
-        border-radius: 10px;
-
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-    }
+  }
 }

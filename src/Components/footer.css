@@ -1,5 +1,5 @@
 .footer_div {
-  border: 1px dotted rgb(223, 223, 220);
+  border: 1px dotted gray;
   width: 100%;
   text-align: center;
   padding: 20px;
@@ -30,7 +30,7 @@
     margin: 10px auto;
     padding-bottom: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 .input input{
@@ -49,12 +49,47 @@
     border: 1px solid rgb(218, 218, 216);
     width: 100%;
     margin: 10px auto;
+    padding: 10px;
 }
 .last_card{
     border: 1px solid rgb(207, 207, 204);
     width: 100%;
     margin: 10px auto;
-    padding-bottom: 10px;
+    padding: 10px;
+
+}
+ .ptag{
+    /* color :red; */
+    font-size: 15px;
+}
+.last_card div{
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: column; */
+}
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+.card_div {
+  /* border: 2px solid rgb(0, 195, 255); */
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-column-gap: 20px;
+
+}
+.first_card{
+    border: 1px solid rgb(218, 218, 216);
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+.last_card{
+    border: 1px solid rgb(207, 207, 204);
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 10px;
 
 }
  .ptag{
