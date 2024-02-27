@@ -9,7 +9,9 @@ const Admin = () => {
   const getContactDetails = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("http://localhost:8080/contacts");
+      const response = await axios.get(
+        "https://helpful-gray-rooster.cyclic.app/contactsdetails"
+      );
       setContacts(response.data);
       setLoading(false);
     } catch (error) {
