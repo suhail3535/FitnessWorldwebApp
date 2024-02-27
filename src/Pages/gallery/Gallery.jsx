@@ -7,7 +7,7 @@ const Gallery = () => {
       <h1 style={{ marginBottom: "2rem", textAlign: "center" }}>Photos Gallery</h1>
       <div className="gallery_card_div">
         {gallery.map((item) => {
-          return <div>
+          return <div className='image_div'>
             <img src={item.image} alt="" />
           </div>
         })}
