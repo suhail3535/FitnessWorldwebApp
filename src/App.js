@@ -9,13 +9,14 @@ import Home from "./Pages/home/Home.jsx"
 import Notefound from "./Pages/notFound/Notefound.jsx"
 import Plans from "./Pages/plans/Plans.jsx"
 import Trainers from "./Pages/trainers/Trainers.jsx"
+import {ChakraProvider} from '@chakra-ui/react'
 import BackToTop from "./Components/BacktoTop";
+import Footer from "./Components/Footer.jsx";
 
 
 function App () {
   return (
-
-    <BrowserRouter>
+<>   <BrowserRouter>
       <Navbar />
       <Routes>
         <Route index element={<Home />} />
@@ -30,8 +31,9 @@ function App () {
       <BackToTop />
 
     </BrowserRouter>
+      <Footer /> 
 
-
+    </>
   );
 }
 
